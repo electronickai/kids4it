@@ -1,0 +1,11 @@
+live_loop :olskar do
+  use_synth :prophet
+  play 70, attack: 4, sustain: 0.5, release: 3
+  sleep 3
+  use_synth :prophet
+  play 75, attack: 4, sustain: 0.5, release: 2
+  sleep 2
+  use_synth :prophet
+  play 65, attack: 4, sustain: 0.5, release: 3
+  sleep 3
+end

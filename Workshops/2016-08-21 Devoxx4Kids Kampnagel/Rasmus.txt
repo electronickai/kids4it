@@ -1,0 +1,23 @@
+# Welcome to Sonic Pi v2.7
+live_loop :doodle1 do
+  sample :loop_amen, beat_stretch: 2
+  sleep 2
+end
+
+live_loop :doodle2 do
+  use_synth :piano
+
+  with_fx :reverb do
+    play_chord chord(:c4, :major), amp: 5
+  end
+  sleep 1
+
+  with_fx :krush do
+    play_chord chord(:e4, :major), amp: 5
+    sleep 1
+    play_chord chord(:g4, :major), amp: 5
+    sleep 1
+    play_chord chord(:a4, :major),amp: 8
+    sleep 1
+  end
+end

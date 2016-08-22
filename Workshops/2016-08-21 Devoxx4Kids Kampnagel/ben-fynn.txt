@@ -1,0 +1,13 @@
+sample :bass_hard_c
+sleep 1
+in_thread do
+  5.times do
+    sample :loop_amen, beat_stretch: 2, amp:10
+    sleep 2
+  end
+end
+in_thread do
+  sample :ambi_drone, amp:5, beat_stretch: 10
+end
+sleep 11
+play 60, amp:20
