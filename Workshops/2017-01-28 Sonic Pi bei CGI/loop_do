@@ -1,0 +1,8 @@
+loop do
+  sample :loop_amen
+  sleep sample_duration :loop_amen
+  sample :loop_mika
+  sleep sample_duration :loop_mika
+  sample :ambi_drone
+  sleep sample_duration :ambi_drone
+end

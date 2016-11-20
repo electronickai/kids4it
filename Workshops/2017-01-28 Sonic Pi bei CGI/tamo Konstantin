@@ -1,0 +1,25 @@
+use_synth :prophet
+
+use_bpm 120
+
+with_fx :reverb,room:0.7 do
+  live_loop :smoke do
+    play_pattern [[:d3],[:f3],[:g3]]
+    sleep 0.5
+    play_pattern [[:d3],[:f3]]
+    play [:gs3] #,:c4]
+    sleep 0.5
+    play [:g3],sustain: 1.5
+    sleep 2
+    play_pattern [[:d3],[:f3],[:g3]]
+    sleep 0.5
+    play [:f3], sustain: 1
+    sleep 1
+    play [:d3],sustain:1
+    sleep 1.5
+    sample :misc_burp,amp:2
+    sleep 1
+    sample :misc_burp, amp:2
+    sleep 1
+  end
+end

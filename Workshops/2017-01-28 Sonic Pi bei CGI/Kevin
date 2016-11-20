@@ -1,0 +1,7 @@
+# Kevin
+live_loop :x do
+  sample :loop_garzul,rate: 1,amp: 0.5
+  sample :loop_garzul, rate: -1,amp: 0.5
+  play (ring :c, :d, :e, :f, :g, :a, :b, :c5).shuffle.tick
+  sleep 1
+end

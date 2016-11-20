@@ -1,0 +1,28 @@
+use_synth :pretty_bell
+5.times do
+  dauer = 0.5
+
+  play :c4
+  sleep dauer
+  play:a4
+  sleep dauer
+
+  play :f4
+
+  sleep dauer
+  play:g4
+  sleep dauer
+  play :f4
+  sleep dauer
+  play :c4
+  sleep dauer
+  play :d4
+  sleep dauer
+  play :c4
+  4.times do
+    sleep dauer
+    play :c4
+    sleep dauer
+    play :d4
+  end
+end
